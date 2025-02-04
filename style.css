@@ -1,0 +1,119 @@
+body {
+  font-family: Inter, Arial;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.timeForm {
+  margin: 20px;
+}
+
+.timeForm * {
+  margin: 10px;
+  margin-bottom: 50px;
+  font-size: 1.1rem;
+}
+
+.timeForm input,
+.timeForm select,
+.timeForm button {
+  padding: 5px;
+}
+
+.ringtoneSelection {
+  cursor: pointer;
+}
+
+.testRingtoneBtn {
+  font-family: Inter, Arial;
+  font-size: 1.1rem;
+  background-color: hsl(314, 74%, 30%);
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.testRingtoneBtn:hover {
+  background-color: hsl(314, 74%, 40%);
+}
+
+.testRingtoneBtn:active {
+  background-color: hsl(314, 74%, 60%);
+}
+
+.buttons {
+  margin-bottom: 20px;
+}
+
+.buttons button {
+  font-family: Inter, Arial;
+  font-size: 1.5rem;
+  color: white;
+  margin: 20px;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.startBtn {
+  background-color: hsl(120, 65%, 30%);
+}
+
+.startBtn:hover {
+  background-color: hsl(120, 65%, 40%);
+}
+
+.startBtn:active {
+  background-color: hsl(120, 65%, 60%);
+}
+
+.stopBtn {
+  background-color: hsl(18, 76%, 30%);
+}
+
+.stopBtn:hover {
+  background-color: hsl(18, 75%, 40%);
+}
+
+.stopBtn:active {
+  background-color: hsl(18, 75%, 60%);
+}
+
+.resetBtn {
+  background-color: hsl(194, 82%, 30%);
+}
+
+.resetBtn:hover {
+  background-color: hsl(194, 82%, 40%);
+}
+
+.resetBtn:active {
+  background-color: hsl(194, 82%, 60%);
+}
+
+.timer {
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-family: monospace, Inter, Arial;
+  font-size: 6rem;
+}
+
+.statusOfTimer {
+  font-size: 4.5rem;
+  font-weight: bold;
+}
