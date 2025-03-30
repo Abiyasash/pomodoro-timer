@@ -1,119 +1,144 @@
-body {
-  font-family: Inter, Arial;
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  max-width: 450px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-  font-size: 4.5rem;
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 10px;
 }
 
-p {
-  font-size: 1.5rem;
+.subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 20px;
 }
 
 .timeForm {
-  margin: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
-.timeForm * {
-  margin: 10px;
-  margin-bottom: 50px;
+.timeForm label {
   font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #555;
 }
 
 .timeForm input,
-.timeForm select,
-.timeForm button {
-  padding: 5px;
+.timeForm select {
+  font-size: 1.2rem;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  width: 100%;
+  text-align: center;
+  color: #333;
 }
 
-.ringtoneSelection {
-  cursor: pointer;
+.timeForm input:focus,
+.timeForm select:focus {
+  border-color: #7cb342;
+  outline: none;
 }
 
 .testRingtoneBtn {
-  font-family: Inter, Arial;
   font-size: 1.1rem;
-  background-color: hsl(314, 74%, 30%);
+  background-color: #ff6f61;
   color: white;
-  padding: 5px;
+  padding: 10px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.25s ease;
+  transition: background-color 0.3s;
+  margin-top: 15px;
 }
 
 .testRingtoneBtn:hover {
-  background-color: hsl(314, 74%, 40%);
-}
-
-.testRingtoneBtn:active {
-  background-color: hsl(314, 74%, 60%);
+  background-color: #ff5a47;
 }
 
 .buttons {
+  display: flex;
+  justify-content: space-around;
   margin-bottom: 20px;
 }
 
 .buttons button {
-  font-family: Inter, Arial;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: white;
-  margin: 20px;
-  padding: 5px 15px;
+  padding: 12px 30px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.25s ease;
+  transition: transform 0.2s ease, background-color 0.3s;
+  min-width: 120px;
 }
 
 .startBtn {
-  background-color: hsl(120, 65%, 30%);
+  background-color: #4caf50;
 }
 
 .startBtn:hover {
-  background-color: hsl(120, 65%, 40%);
-}
-
-.startBtn:active {
-  background-color: hsl(120, 65%, 60%);
+  background-color: #45a049;
 }
 
 .stopBtn {
-  background-color: hsl(18, 76%, 30%);
+  background-color: #f44336;
 }
 
 .stopBtn:hover {
-  background-color: hsl(18, 75%, 40%);
-}
-
-.stopBtn:active {
-  background-color: hsl(18, 75%, 60%);
+  background-color: #e53935;
 }
 
 .resetBtn {
-  background-color: hsl(194, 82%, 30%);
+  background-color: #2196f3;
 }
 
 .resetBtn:hover {
-  background-color: hsl(194, 82%, 40%);
+  background-color: #1976d2;
 }
 
+.startBtn:active,
+.stopBtn:active,
 .resetBtn:active {
-  background-color: hsl(194, 82%, 60%);
+  transform: scale(0.98);
 }
 
 .timer {
-  margin-top: 5px;
-  margin-bottom: 0;
-  font-family: monospace, Inter, Arial;
-  font-size: 6rem;
+  font-size: 4rem;
+  margin-top: 30px;
+  font-family: monospace;
+  color: #333;
 }
 
 .statusOfTimer {
-  font-size: 4.5rem;
+  font-size: 1.5rem;
+  color: #7cb342;
   font-weight: bold;
+  margin-top: 10px;
 }
