@@ -1,47 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pomodoro Timer</title>
     <link rel="stylesheet" href="style.css">
-
     <link rel="icon" type="image/png" href="image/icon.png">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Pomodoro Timer</h1>
-    <p>The # 1 productivity tool!</p>
-
-    <form class="timeForm">
-      <label for="workTimeInput">Work Time:</label>
-      <input class="workTimeInput" type="text" placeholder="HH:MM:SS">
+    <div class="container">
+      <h1>Pomodoro Timer</h1>
+      <p class="subtitle">The #1 productivity tool</p>
       
-      <label for="breakTimeInput">Break Time:</label>
-      <input class="breakTimeInput" type="text" placeholder="HH:MM:SS">
+      <form class="timeForm">
+        <label for="workTimeInput">Work Time:</label>
+        <input class="timeInput workTimeInput" type="text" placeholder="HH:MM:SS" id="workTimeInput">
 
-      <label for="ringtoneSelection">Ringtone: </label>
-      <select class="ringtoneSelection">
-        <option value="audio/app_alert_tone_ringtone_002.mp3">Ringtone 1</option>
-        <option value="audio/app_alert_tone_ringtone_004.mp3">Ringtone 2</option>
-        <option value="audio/app_alert_tone_ringtone_007.mp3">Ringtone 3</option>
-      </select>
+        <label for="breakTimeInput">Break Time:</label>
+        <input class="timeInput breakTimeInput" type="text" placeholder="HH:MM:SS" id="breakTimeInput">
 
-      <button class="testRingtoneBtn">Test Ringtone</button>
-    </form>
-    
-    <div class="buttons">
-      <button class="startBtn">Start</button>
-      <button class="stopBtn">Stop</button>
-      <button class="resetBtn">Reset</button>
+        <label for="ringtoneSelection">Ringtone:</label>
+        <select class="ringtoneSelection" id="ringtoneSelection">
+          <option value="audio/app_alert_tone_ringtone_002.mp3">Ringtone 1</option>
+          <option value="audio/app_alert_tone_ringtone_004.mp3">Ringtone 2</option>
+          <option value="audio/app_alert_tone_ringtone_007.mp3">Ringtone 3</option>
+        </select>
+
+        <button class="testRingtoneBtn" type="button">Test Ringtone</button>
+      </form>
+
+      <div class="buttons">
+        <button class="startBtn" type="button">Start</button>
+        <button class="stopBtn" type="button">Stop</button>
+        <button class="resetBtn" type="button">Reset</button>
+      </div>
+
+      <p class="timer">00:00:00</p>
+      <p class="statusOfTimer"></p>
     </div>
-    
-    <p class="timer">00:00:00</p>
-
-    <p class="statusOfTimer"></p>
 
     <script src="script.js"></script>
   </body>
